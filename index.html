@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auto Center Sonho</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0a2e5c',
+            accent: '#f97316',
+            dark: '#000000',
+            light: '#ffffff'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-dark text-light">
+  <header class="bg-primary text-light sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="text-3xl font-bold">Auto Center Sonho</div>
+      <nav class="space-x-6">
+        <a href="#services" class="hover:text-accent">Serviços</a>
+        <a href="#about" class="hover:text-accent">Sobre Nós</a>
+        <a href="#testimonials" class="hover:text-accent">Depoimentos</a>
+        <a href="#contact" class="hover:text-accent">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-[url('https://source.unsplash.com/1600x900/?garage,car')] bg-cover bg-center h-screen flex items-center">
+    <div class="container mx-auto text-light p-6 bg-dark bg-opacity-70 rounded-lg">
+      <h1 class="text-5xl font-extrabold mb-4">Oficina Mecânica em Paranaguá, PR</h1>
+      <p class="mb-6 text-lg">Serviços completos de motor, suspensão, freios e muito mais. Qualidade e confiança para seu veículo.</p>
+      <a href="https://wa.me/5541998271207" target="_blank" class="inline-flex items-center px-6 py-3 bg-accent hover:bg-accent/90 rounded-full text-light font-semibold transition">
+        WhatsApp: (41) 99827-1207
+      </a>
+    </div>
+  </section>
+
+  <section id="services" class="py-16 bg-light text-dark">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold text-primary mb-10">Nossos Serviços</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Serviços já adicionados aqui -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 bg-dark text-light">
+    <div class="container mx-auto max-w-4xl px-4 text-center">
+      <h2 class="text-4xl font-bold text-accent mb-8">Contato</h2>
+      <p class="text-lg mb-4">Telefone: <a href="tel:+5541998271207" class="text-accent hover:underline">(41) 99827-1207</a></p>
+      <p class="text-lg mb-4">WhatsApp: <a href="https://wa.me/5541998271207" target="_blank" class="text-accent hover:underline">(41) 99827-1207</a></p>
+      <p class="text-lg mb-8">Endereço: Av. Doná Julieta, 54 - Vila Garcia, Paranaguá, PR</p>
+
+      <div class="aspect-w-16 aspect-h-9 rounded-lg shadow-lg overflow-hidden mx-auto max-w-full">
+        <iframe
+          src="https://www.google.com/maps?q=Av.+Doná+Julieta,+54+-+Vila+Garcia,+Paranaguá,+PR&output=embed"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa Auto Center Sonho"></iframe>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
