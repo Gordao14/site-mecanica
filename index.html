@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auto Center Sonho</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0a2e5c',
+            accent: '#f97316',
+            dark: '#000000',
+            light: '#ffffff'
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body class="bg-dark text-light">
+
+<header class="bg-primary text-light sticky top-0 z-50 shadow-lg">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <div class="text-3xl font-bold">Auto Center Sonho</div>
+    <nav class="space-x-6">
+      <a href="#services" class="hover:text-accent">Serviços</a>
+      <a href="#about" class="hover:text-accent">Sobre Nós</a>
+      <a href="#testimonials" class="hover:text-accent">Depoimentos</a>
+      <a href="#contact" class="hover:text-accent">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<section class="bg-[url('https://source.unsplash.com/1600x900/?garage,car')] bg-cover bg-center h-screen flex items-center">
+  <div class="container mx-auto text-light p-6 bg-dark bg-opacity-70 rounded-lg">
+    <h1 class="text-5xl font-extrabold mb-4">Oficina Mecânica em Paranaguá, PR</h1>
+    <p class="mb-6 text-lg">Serviços completos de motor, suspensão, freios e muito mais. Qualidade e confiança para seu veículo.</p>
+    <a href="https://wa.me/5541998271207" target="_blank" class="inline-flex items-center px-6 py-3 bg-accent hover:bg-accent/90 rounded-full text-light font-semibold transition">
+      <i class="fab fa-whatsapp mr-2 text-2xl"></i> WhatsApp: (41) 99827-1207
+    </a>
+  </div>
+</section>
+
+<section id="services" class="py-16 bg-light text-dark">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold text-primary mb-10">Nossos Serviços</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-2xl transition group relative">
+        <img src="https://img.icons8.com/ios-filled/100/FFA500/engine.png" alt="Motor" class="w-12 h-12 mb-4 mx-auto">
+        <h3 class="font-semibold text-2xl mb-2 text-light">Revisão de Motor</h3>
+        <div class="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 flex items-center justify-center text-sm text-light px-4 transition">
+          A revisão do motor aumenta a vida útil do veículo e evita falhas graves.
+        </div>
+      </div>
+      <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-2xl transition group relative">
+        <img src="https://img.icons8.com/ios-filled/100/FFA500/brake-discs.png" alt="Freios" class="w-12 h-12 mb-4 mx-auto">
+        <h3 class="font-semibold text-2xl mb-2 text-light">Freios</h3>
+        <div class="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 flex items-center justify-center text-sm text-light px-4 transition">
+          Manter os freios em dia garante segurança nas frenagens e evita acidentes.
+        </div>
+      </div>
+      <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-2xl transition group relative">
+        <img src="https://img.icons8.com/ios-filled/100/FFA500/suspension.png" alt="Suspensão" class="w-12 h-12 mb-4 mx-auto">
+        <h3 class="font-semibold text-2xl mb-2 text-light">Suspensão</h3>
+        <div class="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 flex items-center justify-center text-sm text-light px-4 transition">
+          A suspensão bem cuidada oferece mais conforto e estabilidade ao dirigir.
+        </div>
+      </div>
+      <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-2xl transition group relative">
+        <img src="https://img.icons8.com/ios-filled/100/FFA500/oil-can.png" alt="Troca de Óleo" class="w-12 h-12 mb-4 mx-auto">
+        <h3 class="font-semibold text-2xl mb-2 text-light">Troca de Óleo e Fluidos</h3>
+        <div class="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 flex items-center justify-center text-sm text-light px-4 transition">
+          Lubrificação correta previne desgaste do motor e garante desempenho.
+        </div>
+      </div>
+      <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-2xl transition group relative">
+        <img src="https://img.icons8.com/ios-filled/100/FFA500/weight-balance.png" alt="Balanceamento" class="w-12 h-12 mb-4 mx-auto">
+        <h3 class="font-semibold text-2xl mb-2 text-light">Balanceamento</h3>
+        <div class="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 flex items-center justify-center text-sm text-light px-4 transition">
+          O balanceamento evita vibrações no volante e desgaste irregular dos pneus.
+        </div>
+      </div>
+      <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-2xl transition group relative">
+        <img src="https://img.icons8.com/ios-filled/100/FFA500/wheel-alignment.png" alt="Alinhamento" class="w-12 h-12 mb-4 mx-auto">
+        <h3 class="font-semibold text-2xl mb-2 text-light">Alinhamento e Geometria</h3>
+        <div class="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 flex items-center justify-center text-sm text-light px-4 transition">
+          Garante estabilidade, economia de combustível e preserva os pneus.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="py-16 bg-dark text-light">
+  <div class="container mx-auto text-center max-w-4xl px-4">
+    <h2 class="text-4xl font-bold text-accent mb-6">Sobre Nós</h2>
+    <p class="text-lg mb-4">A Auto Center Sonho atua em Paranaguá há mais de 15 anos, oferecendo serviços de excelência em mecânica automotiva. Prezamos pela honestidade, eficiência e atendimento personalizado. Nossa equipe é formada por profissionais qualificados e apaixonados por carros.</p>
+    <p class="text-lg">Venha nos visitar e comprove a qualidade do nosso atendimento!</p>
+  </div>
+</section>
+
+<section id="testimonials" class="py-16 bg-light text-dark">
+  <div class="container mx-auto max-w-5xl px-4 text-center">
+    <h2 class="text-4xl font-bold text-primary mb-10">Depoimentos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-dark p-6 rounded-lg shadow-lg text-light">
+        <p class="italic mb-4">“Excelente atendimento! Meu carro ficou como novo, recomendo muito a oficina.”</p>
+        <p class="font-semibold">– João Silva</p>
+      </div>
+      <div class="bg-dark p-6 rounded-lg shadow-lg text-light">
+        <p class="italic mb-4">“Profissionais competentes e confiáveis. Sempre volto para fazer manutenção.”</p>
+        <p class="font-semibold">– Maria Oliveira</p>
+      </div>
+      <div class="bg-dark p-6 rounded-lg shadow-lg text-light">
+        <p class="italic mb-4">“Preço justo e serviço de qualidade. Atendimento rápido e eficiente.”</p>
+        <p class="font-semibold">– Carlos Souza</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-16 bg-dark text-light">
+  <div class="container mx-auto max-w-4xl px-4 text-center">
+    <h2 class="text-4xl font-bold text-accent mb-8">Contato</h2>
+    <p class="text-lg mb-4">Telefone: <a href="tel:+5541998271207" class="text-accent hover:underline">(41) 99827-1207</a></p>
+    <p class="text-lg mb-4">WhatsApp: <a href="https://wa.me/5541998271207" target="_blank" class="text-accent hover:underline">(41) 99827-1207</a></p>
+    <p class="text-lg mb-8">Endereço: Av. Doná Julieta, 54 - Vila Garcia, Paranaguá, PR</p>
+    <iframe
+      src="https://www.google.com/maps?q=Av.+Doná+Julieta,+54+-+Vila+Garcia,+Paranaguá,+PR&output=embed"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      class="rounded-lg shadow-lg"
+      title="Mapa Auto Center Sonho"></iframe>
+  </div>
+</section>
+
+</body>
+</html>
